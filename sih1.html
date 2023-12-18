@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" style="--chakra-ui-color-mode: light;">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>NEEPCO</title>
+    <script defer="defer" src="/static/js/main.91d6d91a.js"></script>
+    <link href="/static/css/main.cdfbbeb2.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            background-image: url('67c7b6abd04012aeb8891ded3c660885.jpg'); /* Add your background image URL here */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.8); /* Adjust the background color and opacity */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 80%;
+            max-width: 600px;
+            display: flex;
+        }
+
+        .login-form {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .chakra-input__group {
+            display: flex;
+        }
+
+        .form-group input[type="password"] {
+            border-radius: 4px 0 0 4px;
+        }
+
+        .chakra-input__right-element {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            border-radius: 0 8px 8px 0;
+        }
+    </style>
+    <style data-emotion="css-global" data-s=""></style>
+    <style data-emotion="css-global" data-s=""></style>
+    <style data-emotion="css-global" data-s=""></style>
+    <style data-emotion="css" data-s=""></style>
+</head>
+
+<body class="chakra-ui-light">
+    <div class="login-container">
+        <div class="login-form">
+            <h2>NEEPCO</h2>
+            <p class="chakra-text css-mxr4tm">Sign in to your account</p>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Enter Your Email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <div class="chakra-input__group">
+                    <input type="password" id="password" name="password" placeholder="Enter Your Password">
+                    <div class="chakra-input__right-element" onclick="togglePassword()">
+                        <i class="fa fa-eye"></i>
+                    </div>
+                </div>
+            </div>
+            <button type="button">Sign In</button>
+            <p class="chakra-text css-cewpam">Don't have an account? <a class="chakra-link css-14j13e4" href="/signup">Sign up</a></p>
+        </div>
+        <div class="image-container">
+            <img src="Picture1.png" alt="powerhouse">
+        </div>
+    </div>
+
+    <div id="chakra-toast-portal">
+        <!-- Toast manager code here -->
+    </div>
+
+    <script>
+        function togglePassword() {
+            var passwordField = document.getElementById("password");
+            var icon = document.querySelector(".chakra-input__right-element i");
+
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                icon.classList.remove("fa-eye");
+                icon.classList.add("fa-eye-slash");
+            } else {
+                passwordField.type = "password";
+                icon.classList.remove("fa-eye-slash");
+                icon.classList.add("fa-eye");
+            }
+        }
+    </script>
+</body>
+
+</html>
